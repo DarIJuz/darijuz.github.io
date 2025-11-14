@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>„Idąc Tropami Biegnącej z Wilkami” – opis książki</title>
+
+  <meta name="description" content="Idąc Tropami Biegnącej z Wilkami – pierwsza książka z serii Księga Widzenia. O relacjach, kobiecości, męskości i duchowej drodze serca. Oficjalny opis książki autora DarIJuż.">
+  <meta name="author" content="DarIJuż">
+
+  <style>
+    /* =====================================================
+       🌊 TŁO – MORZE + ANIMACJA FAL
+    ===================================================== */
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      color: #e7e7e7;
+      line-height: 1.6;
+
+      background: url("morze 2.png") repeat-x top center;
+      background-size: cover;
+      background-attachment: fixed;
+
+      animation: waves 18s ease-in-out infinite alternate;
+    }
+
+    @keyframes waves {
+      0% { background-position: 0px 0px; }
+      100% { background-position: 0px 70px; }
+    }
+
+    /* =====================================================
+       🌙 BANER Glowne.png z animacją i rozmyciem
+    ===================================================== */
+    .hero-banner {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px;
+      position: relative;
+      overflow: visible;
+    }
+
+    .hero-image {
+      width: 65%;
+      max-width: 680px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 18px;
+
+      mask-image: radial-gradient(circle, black 75%, transparent 100%);
+      -webkit-mask-image: radial-gradient(circle, black 75%, transparent 100%);
+
+      animation:
+        glowMoon 6s ease-in-out infinite alternate,
+        tiltMotion 12s ease-in-out infinite,
+        waveSoft 9s ease-in-out infinite;
+
+      filter: drop-shadow(0 0 25px rgba(0,0,0,0.6));
+    }
+
+    @keyframes glowMoon {
+      0% { filter: brightness(1); }
+      100% { filter: brightness(1.09); }
+    }
+
+    @keyframes waveSoft {
+      0% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-3px) scale(1.008); }
+      100% { transform: translateY(0px) scale(1); }
+    }
+
+    @keyframes tiltMotion {
+      0% { transform: rotateX(0deg) rotateY(0deg); }
+      50% { transform: rotateX(0.25deg) rotateY(-0.35deg); }
+      100% { transform: rotateX(0deg) rotateY(0deg); }
+    }
+
+    /* =====================================================
+       📘 GŁÓWNY PANEL OPISU
+    ===================================================== */
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 20px 20px 28px 20px;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.65);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #ffd9a3;
+      text-shadow: 0 0 6px #000;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 1.9em;
+      margin-top: 0.5rem;
+    }
+
+    h2 em {
+      font-style: italic;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 16px;
+      color: #f2ede7;
+    }
+
+    .cover {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+    }
+
+    /* =====================================================
+       🪵 DREWNIANE PRZYCISKI – spójne z index.html
+    ===================================================== */
+    .buttons {
+      text-align: center;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 18px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.98rem;
+      letter-spacing: 0.03em;
+
+      background-image: url('drewno.png');
+      background-size: cover;
+      background-position: center;
+      border-radius: 6px;
+
+      box-shadow:
+        0 3px 0 rgba(0,0,0,0.65),
+        inset 0 0 6px rgba(0,0,0,0.6);
+      border: 1px solid rgba(0,0,0,0.7);
+
+      text-shadow: 0 1px 2px rgba(0,0,0,0.9);
+
+      transition: transform 0.18s ease,
+                  box-shadow 0.18s ease,
+                  filter 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px) scale(1.03);
+      filter: brightness(1.08) contrast(1.05);
+      box-shadow:
+        0 4px 6px rgba(0,0,0,0.8),
+        inset 0 0 10px rgba(255,255,255,0.12);
+    }
+
+    .btn:active {
+      transform: translateY(1px) scale(0.99);
+      box-shadow:
+        0 1px 2px rgba(0,0,0,0.8),
+        inset 0 0 6px rgba(0,0,0,0.8);
+      filter: brightness(0.93);
+    }
+
+    /* =====================================================
+       📱 MOBILKI
+    ===================================================== */
+    @media (max-width: 600px) {
+      .hero-image { width: 92%; }
+      main        { margin: 2rem 0.6rem; padding: 1.2rem; }
+      .cover      { max-width: 260px; width: 90%; }
+      .btn        { width: 90%; box-sizing: border-box; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 🌙 BANER -->
+  <header class="hero-banner">
+    <img src="Glowne.png" class="hero-image" alt="Oficjalny Sklep Autorski DarIJuż">
+  </header>
+
+  <!-- 📘 OPIS KSIĄŻKI -->
+  <main>
+    <h1>„Idąc Tropami Biegnącej z Wilkami”</h1>
+    <h2>Pierwsza książka z serii <em>Podróże Bohatera</em></h2>
+
+    <img src="okladka.png" alt="Okładka książki Idąc Tropami Biegnącej z Wilkami" class="cover">
+
+    <p>
+      Książka <strong>„Idąc Tropami Biegnącej z Wilkami”</strong> to kontynuacja duchowej refleksji
+      nad kobiecością, męskością i miłością – inspirowana dziełem Clarissy Pinkoli Estés.
+      Otwiera ona przestrzeń rozmowy o wewnętrznej mądrości serca, o powrocie do instynktownej intuicji
+      i o miłości rozumianej jako droga poznania.
+    </p>
+
+    <p>
+      Tekst prowadzi czytelnika ścieżkami symboli, snów i opowieści, które pomagają dotrzeć
+      do własnego źródła – miejsca, w którym spotykają się świadomość i dzikość, spokój i pasja.
+      To książka dla tych, którzy nie boją się patrzeć głębiej i pytać o sens bycia sobą w świecie
+      pełnym zapomnienia o duchu.
+    </p>
+
+    <p>
+      Wydanie autorskie w formacie PDF, dostępne wyłącznie w oficjalnym sklepie autora DarIJuż.
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="index.html">⬅ Powrót do strony głównej</a>
+      <a class="btn" href="https://buy.stripe.com/aFa14neDR0mceHf4xx7bW01" target="_blank">💳 Kup książkę (PDF)</a>
+    </div>
+  </main>
+
+</body>
+</html>
