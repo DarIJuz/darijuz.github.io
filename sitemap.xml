@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Strona główna -->
+    <url>
+        <loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Podstrony główne -->
+    <url><loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/fragment.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/fragment2.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+    <url><loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/opis.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/opis2.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/opis3.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/opis_en.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <!-- Strony podziękowania -->
+    <url><loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/thank_you_en.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+    <url><loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/thankyou-biegnaca.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+    <url><loc>https://darijuz.github.io/Oficjalny-Sklep-Autorski-DarIJuz/thankyou-ksiega-widzenia.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+
